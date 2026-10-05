@@ -9,13 +9,11 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background: #f4f4f4;
     color: #222;
-    transition: background-color 0.5s, color 0.5s;
+    transition: 0.5s;
 }
-
-/* Header */
 
 header {
     padding: 25px 8%;
@@ -32,82 +30,65 @@ header p {
     color: #777;
 }
 
-/* Hero */
-
 .hero {
-    min-height: 80vh;
+    min-height: 75vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(
-        135deg,
-        #dcecff,
-        #f7f9ff
-    );
-    transition: background 0.5s;
+    background: #e7eef7;
+    transition: 0.5s;
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .small-text {
-    letter-spacing: 3px;
     font-size: 13px;
-    font-weight: bold;
-    color: #555;
+    letter-spacing: 3px;
     margin-bottom: 20px;
 }
 
 .hero h2 {
-    font-size: clamp(40px, 7vw, 80px);
-    line-height: 1;
-    margin-bottom: 25px;
+    font-size: 65px;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 18px;
 }
 
-/* Button */
-
 button {
     margin-top: 30px;
-    padding: 15px 30px;
+    padding: 14px 28px;
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     background: #222;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: transform 0.2s, background 0.2s;
 }
 
 button:hover {
     transform: scale(1.05);
-    background: #555;
 }
 
 .keyboard-hint {
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 14px !important;
     color: #666;
 }
 
-/* General Sections */
-
 section:not(.hero) {
-    padding: 80px 8%;
+    padding: 70px 8%;
 }
 
 section h2 {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 32px;
 }
-
-/* Status */
 
 .status-section {
     background: white;
@@ -116,70 +97,42 @@ section h2 {
 .status-card {
     display: flex;
     align-items: center;
-    gap: 25px;
-    max-width: 700px;
+    gap: 20px;
+    max-width: 650px;
     padding: 30px;
-    background: #f5f5f5;
-    border-radius: 20px;
+    background: #f2f2f2;
+    border-radius: 15px;
 }
 
 .status-icon {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .status-card h3 {
-    font-size: 25px;
     margin-bottom: 8px;
 }
-
-/* Schedule */
 
 .schedule-section {
     background: #eeeeee;
 }
 
 .schedule {
-    max-width: 800px;
+    max-width: 750px;
 }
 
 .schedule-item {
     display: flex;
-    gap: 30px;
-    padding: 25px;
-    margin-bottom: 15px;
+    gap: 25px;
+    padding: 22px;
+    margin-bottom: 12px;
     background: white;
-    border-radius: 15px;
-    transition: transform 0.3s;
-}
-
-.schedule-item:hover {
-    transform: translateX(10px);
+    border-radius: 12px;
 }
 
 .time {
-    min-width: 90px;
+    min-width: 85px;
     font-weight: bold;
 }
-
-/* Screen */
-
-.screen-section {
-    background: white;
-}
-
-.screen-card {
-    max-width: 700px;
-    padding: 35px;
-    background: #eeeeee;
-    border-radius: 20px;
-}
-
-.screen-size {
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-/* Progress */
 
 .progress-section {
     background: #eeeeee;
@@ -187,7 +140,7 @@ section h2 {
 
 .progress-container {
     width: 100%;
-    height: 25px;
+    height: 22px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -201,24 +154,20 @@ section h2 {
 }
 
 #progressText {
-    margin-top: 15px;
+    margin-top: 12px;
 }
-
-/* Notification */
 
 .notification {
     position: fixed;
-    right: 25px;
-    bottom: 25px;
-    width: 300px;
+    right: 20px;
+    bottom: 20px;
+    width: 280px;
     padding: 20px;
     background: #222;
     color: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-
+    border-radius: 12px;
     transform: translateY(150%);
-    transition: transform 0.5s;
+    transition: 0.5s;
 }
 
 .notification.show {
@@ -230,29 +179,13 @@ section h2 {
     color: #ddd;
 }
 
-/* Footer */
-
-footer {
-    padding: 40px;
-    text-align: center;
-    background: #222;
+body.night {
+    background: #181818;
     color: white;
 }
 
-footer p + p {
-    margin-top: 8px;
-    color: #aaa;
-}
-
-/* NIGHT MODE */
-
-body.night {
-    background: #151515;
-    color: #eee;
-}
-
 body.night header {
-    background: #1d1d1d;
+    background: #222;
     border-color: #333;
 }
 
@@ -261,34 +194,24 @@ body.night header p {
 }
 
 body.night .hero {
-    background: linear-gradient(
-        135deg,
-        #151b2b,
-        #252b3d
-    );
+    background: #252b3a;
 }
 
-body.night .small-text {
-    color: #aaa;
+body.night .status-section {
+    background: #222;
 }
 
-body.night .status-section,
-body.night .screen-section {
-    background: #1d1d1d;
-}
-
-body.night .status-card,
-body.night .screen-card {
-    background: #292929;
+body.night .status-card {
+    background: #303030;
 }
 
 body.night .schedule-section,
 body.night .progress-section {
-    background: #151515;
+    background: #181818;
 }
 
 body.night .schedule-item {
-    background: #252525;
+    background: #292929;
 }
 
 body.night button {
@@ -296,21 +219,22 @@ body.night button {
     color: #222;
 }
 
-/* Responsive */
-
 @media (max-width: 600px) {
 
+    .hero h2 {
+        font-size: 42px;
+    }
+
     section:not(.hero) {
-        padding: 60px 20px;
+        padding: 55px 20px;
     }
 
     .schedule-item {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
     }
 
     .status-card {
-        flex-direction: column;
         align-items: flex-start;
     }
 
