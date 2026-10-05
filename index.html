@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day at University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>A Day at University</h1>
+        <p>Interactive Student Journey</p>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="small-text">MY UNIVERSITY DAY</p>
+
+                <h2 id="mainTitle">Ready for the Day?</h2>
+
+                <p id="description">
+                    Start your university day and see what happens.
+                </p>
+
+                <button id="startButton">Start My Day</button>
+
+                <p class="keyboard-hint">
+                    Press <strong>N</strong> on your keyboard to switch between day and night.
+                </p>
+            </div>
+        </section>
+
+        <!-- Status -->
+        <section class="status-section">
+            <h2>Current Status</h2>
+
+            <div class="status-card">
+                <div class="status-icon" id="statusIcon">☀️</div>
+
+                <div>
+                    <h3 id="statusTitle">Morning</h3>
+                    <p id="statusText">
+                        You haven't started your day yet.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule -->
+        <section class="schedule-section">
+
+            <h2>My Day</h2>
+
+            <div class="schedule">
+
+                <div class="schedule-item">
+                    <span class="time">8:00 AM</span>
+                    <div>
+                        <h3>Wake Up</h3>
+                        <p>Get ready for university.</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <span class="time">9:00 AM</span>
+                    <div>
+                        <h3>Class</h3>
+                        <p>Attend my morning lecture.</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <span class="time">12:00 PM</span>
+                    <div>
+                        <h3>Lunch</h3>
+                        <p>Take a break and grab something to eat.</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <span class="time">2:00 PM</span>
+                    <div>
+                        <h3>Study</h3>
+                        <p>Work on assignments and readings.</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <span class="time">5:00 PM</span>
+                    <div>
+                        <h3>Go Home</h3>
+                        <p>Finish the day and head home.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Screen Size Message -->
+        <section class="screen-section">
+            <h2>Your Screen</h2>
+
+            <div class="screen-card">
+                <p id="screenMessage">
+                    Your screen size is being detected...
+                </p>
+
+                <p class="screen-size">
+                    Width: <span id="screenWidth">0</span>px
+                </p>
+            </div>
+        </section>
+
+        <!-- Progress -->
+        <section class="progress-section">
+
+            <h2>Day Progress</h2>
+
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="progressText">0% of your day completed</p>
+
+        </section>
+
+    </main>
+
+    <!-- Timed notification -->
+    <div id="notification" class="notification">
+        <strong>⏰ Reminder</strong>
+        <p>You've been on this page for 10 seconds!</p>
+    </div>
+
+    <footer>
+        <p>CCT360 Interactive Webpage</p>
+        <p>Scroll • Click • Press N • Resize</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
